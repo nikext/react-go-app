@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
+export const apiUrl =
+  import.meta.env.MODE === "development" ? "http://localhost:4000/api" : "/api";
+
 function App() {
   return (
     <Stack h="100vh">
